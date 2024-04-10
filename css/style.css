@@ -1,0 +1,111 @@
+* {
+	box-sizing:border-box;
+}
+
+h1 {
+    text-align:center;
+    color: chocolate;
+}
+
+.panel {
+    float:left;
+    text-align:center;
+    width: 100%;
+
+}
+
+#top {
+    background-color: green;
+}
+
+#bottom {
+    background-color: coral;
+    height:400px;
+}
+
+.collumn {
+	float:left;	
+	text-align:center;
+	width:33.33%;
+	padding:10px;
+	opacity:0.8;
+}
+
+#left {
+    background-color: blue;
+}
+
+#mid {
+    background-color: yellow;
+    height: 230px;
+}
+
+#right {
+    background-color: grey;
+    height: 230px;
+}
+
+#left {
+    background-color: 04AA6D;
+}
+
+.button {
+    background-color: #04AA6D; /* Green */
+    border: 1px solid green;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 150px;
+    display: block;
+    margin-left: 150px;
+  }
+  
+  .button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+  }
+  
+  .button:hover {
+    background-color: #3e8e41;
+  }
+
+#box  {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation: myfirst 5s linear 2s infinite alternate;
+  }              
+
+  @keyframes myfirst {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:350px; top:0px;}
+    50%  {background-color:blue; left:350px; top:110px;}
+    75%  {background-color:green; left:0px; top:110px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+
+#top {
+    background-color: yellow;
+    animation-name: coloring;
+    animation: coloring 10s linear 2s infinite alternate;
+ }
+
+  @keyframes coloring {
+    from {background-color:yellow;}
+    to {background-color:blue;} 
+  }
+
+#bottom {
+    background-color: green;
+    animation: sizing 3s linear 1s infinite alternate;
+ }
+
+ @keyframes sizing {
+    from {height:350px;
+          background-color:green;}
+    to {height:0px;
+            background-color:brown;} 
+  }
